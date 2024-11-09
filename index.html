@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder By Aisha Tahir</h1>
+        <form id="resume-form">
+            <Section>
+                <image>
+                    <label for="profile-pic">Profile Picture:</label>
+                    <input type="file" id="profile-pic" name="profile-pic"><br><br>
+                </image>
+            </Section>
+            <section>
+                <h2>Contact Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+            </section>
+            <section>
+                <h2>Work Experience</h2>
+                <div id="work-experience">
+                    <button id="add-work-exp">Add Experience</button>
+                </div>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <div id="education">
+                    <button id="add-education">Add Education</button>
+
+                </div>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <div id="skills">
+                    <button id="add-skill">Add Skill</button>
+                </div>
+            </section>
+            <button id="generate-resume">Generate Resume</button>
+        </form>
+        <div id="generated-resume"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
